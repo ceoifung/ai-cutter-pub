@@ -72,6 +72,8 @@ jobs:
       - name: 打包 exe
         shell: bash
         working-directory: app
+        env:
+          PYTHONIOENCODING: utf-8
         run: python tools/build_exe.py
 
       - name: 冒烟测试（worker 模式自检）
