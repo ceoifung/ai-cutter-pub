@@ -44,6 +44,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install --no-deps kokoro-onnx==0.6.1
 
       - name: 下载模型资源（本仓库 Release）
         shell: bash
